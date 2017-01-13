@@ -8,7 +8,7 @@ freq=60         # every Every 60 seconds
 maxshots=30     # max Max screen captures
 animate=0     # create Ceate animated gif? No.
 
-while getopts "af:m" opt; do
+while getopts "af:m:" opt; do
   case $opt in
    a ) animate=1;                  ;;
    f ) freq=$OPTARG;               ;;
